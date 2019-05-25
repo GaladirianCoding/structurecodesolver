@@ -18,23 +18,16 @@ func getArguments() (string, error) {
 }
 
 func parseArguments(puzzleString string) (puzzle, error) {
+	tuples := strings.Split(strings.ToUpper(puzzleString), ",")
 
-	puzzleUpper := strings.ToUpper(puzzleString)
-	tuples := strings.Split(puzzleUpper, ",")
-
-	returnSlice := make(puzzle, 0)
+	returnSlice := puzzle{}
 	for _, tuple := range tuples {
 		if len(tuple) < 2 {
 			return nil,
 				errors.New("puzzle rune \"" + tuple + "\" was too short. Please ensure each rune is two characters long")
 		}
-		newRune := puzzleRune{}
-		newRune[0] = rune(tuple[0])
-		newRune[1] = rune(tuple[1])
-
-		returnSlice = append(returnSlice, newRune)
+		returnSlice = append(returnSlice, puzzleRune{rune(tuple[0]), rune(tuple[1])})
 	}
 
 	return returnSlice, nil
-
 }
