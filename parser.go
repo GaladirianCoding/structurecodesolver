@@ -28,6 +28,5 @@ func parseArguments(puzzleString string) (puzzle, error) {
 		}
 		returnSlice = append(returnSlice, puzzleRune{rune(tuple[0]), rune(tuple[1])})
 	}
-
 	return returnSlice, nil
 }
