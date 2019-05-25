@@ -4,8 +4,8 @@ structurecodesolver is a lightweight tool for solving artifact puzzle in [Struct
 
 ## Installation
 
-structurecodesolver requires go to build the binary.
-Once you have cloned the repo, and cd'ed into the directory simply run
+structurecodesolver requires Go to build the binary.
+Once you have cloned the repo, and navigated into the directory simply run
 
 ```bash
 go build
