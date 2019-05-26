@@ -5,13 +5,35 @@ structurecodesolver is a lightweight tool for solving artifact puzzle in [Struct
 ## Installation
 
 structurecodesolver requires Go to build the binary.
-Once you have cloned the repo, and navigated into the directory simply run
+There are two ways to get the source code onto your machine. One is to simply clone the repo and navigate into the directory. The other way is to run the following go command.
 
-```bash
+```shell
+go get -d github.com/galadiriancoding/structurecodesolver
+```
+
+Which should install the repo to $GOPATH/src/galadiriancoding/structurecodesolver
+
+Once you have aquired the source, and navigated into the directory simply run
+
+```shell
 go build
 ```
 
 which should build the binary inside the same directory.
+
+If you want to use the built binary from anywhere on your machine you can run the following go command from inside the main directory
+
+```shell
+go install
+```
+
+Or when fetching the source code runn the following command instead 
+
+```shell
+go get github.com/galadiriancoding/structurecodesolver
+```
+
+If you don't want to deal with Go then you can just download the binary from the release page.
 
 ## Usage
 
@@ -19,7 +41,7 @@ To run the solver simply navigate to the folder with the binary and run it with 
 
 For example if you wanted to solve a puzzle with the runes ["HT", IN", FI", "TI", "IG", "NG", "GH"] you would run
 
-```bash
+```shell
 $ ./structurecodesolver HT,IN,FI,TI,IG,NG,GH
 FIGHTING
 ```
