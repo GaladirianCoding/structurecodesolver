@@ -33,7 +33,7 @@ Or when fetching the source code runn the following command instead
 go get github.com/galadiriancoding/structurecodesolver
 ```
 
-If you don't want to deal with Go then you can just download the binary from the release page.
+If you don't want to deal with Go then you can just download the binary from the [release page](https://github.com/galadiriancoding/structurecodesolver/releases).
 
 ## Usage
 
