@@ -27,7 +27,7 @@ If you want to use the built binary from anywhere on your machine you can run th
 go install
 ```
 
-Or when fetching the source code runn the following command instead 
+Or when fetching the source code run the following command instead
 
 ```shell
 go get github.com/galadiriancoding/structurecodesolver
@@ -49,7 +49,7 @@ FIGHTING
 which should print "FIGHTING" or "FINGHTIG" (if the puzzle has multiple solutions it will return a random one)
 If there are no solutions to the puzzle it will return "No solution"
 
-### Todos
+## Todos
 
 - Write some Tests
 
